@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:moviesapi/data_access_layer/model/movie.dart';
 import 'package:moviesapi/data_access_layer/repository/movie_repo.dart';
 
-class Movies extends ChangeNotifier {
+class MoviesProvider extends ChangeNotifier {
   Movie movie = Movie();
 
-  Movies() {
+  MoviesProvider() {
     fetchMovies();
   }
 

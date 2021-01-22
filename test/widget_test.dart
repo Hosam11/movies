@@ -9,12 +9,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:moviesapi/main.dart';
-import 'package:moviesapi/screens/movie_page_list.dart';
+import 'package:moviesapi/screens/movie_list_screen.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MoviePageList());
+    await tester.pumpWidget(MovieListScreen());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
